@@ -1,3 +1,7 @@
+//
+//  Resources.swift
+//  FilmHub
+//
 import UIKit
 
 enum Resources {
@@ -7,7 +11,7 @@ enum Resources {
             static let active = UIColor(hexString: "#EA9696")
             static let inactive: UIColor = .gray
         }
-        
+
         enum BaseView {
             static let background = UIColor(hexString: "#1F1D36")
         }
