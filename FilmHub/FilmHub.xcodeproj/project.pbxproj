@@ -30,10 +30,6 @@
 		622294802BB36EDD0062B4CD /* ProfilesMoviewsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6222947F2BB36EDD0062B4CD /* ProfilesMoviewsDataManager.swift */; };
 		626E089C2BBC145900BEDC1D /* MainUsersInfoSVBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626E089B2BBC145900BEDC1D /* MainUsersInfoSVBuilder.swift */; };
 		626E089F2BBD2DE800BEDC1D /* ProfileAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626E089E2BBD2DE800BEDC1D /* ProfileAPIManager.swift */; };
-		626E08A42BBD331A00BEDC1D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 626E08A32BBD331A00BEDC1D /* Alamofire */; };
-		626E08A62BBD331A00BEDC1D /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 626E08A52BBD331A00BEDC1D /* AlamofireDynamic */; };
-		626E08A92BBD4ADC00BEDC1D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 626E08A82BBD4ADC00BEDC1D /* Kingfisher */; };
-		626E08AC2BBD509400BEDC1D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 626E08AB2BBD509400BEDC1D /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,29 +65,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				626E08A92BBD4ADC00BEDC1D /* Kingfisher in Frameworks */,
-				626E08A62BBD331A00BEDC1D /* AlamofireDynamic in Frameworks */,
-				626E08AC2BBD509400BEDC1D /* SwiftyJSON in Frameworks */,
-				626E08A42BBD331A00BEDC1D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E4A5C82FA709D1A01591736 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		622294342BB1614E0062B4CD = {
 			isa = PBXGroup;
 			children = (
 				6222943F2BB1614E0062B4CD /* FilmHub */,
 				6222943E2BB1614E0062B4CD /* Products */,
-				0E4A5C82FA709D1A01591736 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,10 +223,6 @@
 			);
 			name = FilmHub;
 			packageProductDependencies = (
-				626E08A32BBD331A00BEDC1D /* Alamofire */,
-				626E08A52BBD331A00BEDC1D /* AlamofireDynamic */,
-				626E08A82BBD4ADC00BEDC1D /* Kingfisher */,
-				626E08AB2BBD509400BEDC1D /* SwiftyJSON */,
 			);
 			productName = FilmHub;
 			productReference = 6222943D2BB1614E0062B4CD /* FilmHub.app */;
@@ -273,9 +253,6 @@
 			);
 			mainGroup = 622294342BB1614E0062B4CD;
 			packageReferences = (
-				626E08A22BBD331A00BEDC1D /* XCRemoteSwiftPackageReference "Alamofire" */,
-				626E08A72BBD4ADC00BEDC1D /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				626E08AA2BBD509400BEDC1D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 6222943E2BB1614E0062B4CD /* Products */;
 			projectDirPath = "";
@@ -534,56 +511,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		626E08A22BBD331A00BEDC1D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.9.1;
-			};
-		};
-		626E08A72BBD4ADC00BEDC1D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.11.0;
-			};
-		};
-		626E08AA2BBD509400BEDC1D /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		626E08A32BBD331A00BEDC1D /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 626E08A22BBD331A00BEDC1D /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		626E08A52BBD331A00BEDC1D /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 626E08A22BBD331A00BEDC1D /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
-		};
-		626E08A82BBD4ADC00BEDC1D /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 626E08A72BBD4ADC00BEDC1D /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		626E08AB2BBD509400BEDC1D /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 626E08AA2BBD509400BEDC1D /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		622294492BB1614E0062B4CD /* FilmHub.xcdatamodeld */ = {
