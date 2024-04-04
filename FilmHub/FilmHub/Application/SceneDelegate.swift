@@ -1,11 +1,5 @@
-//
-//  SceneDelegate.swift
-//  FilmHub
-//
-//  Created by Нияз Ризванов on 25.03.2024.
-//
-
 import UIKit
+
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -15,12 +9,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
         let tabBarController = TabBarViewController()
-
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
-
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
