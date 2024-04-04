@@ -10,7 +10,6 @@ enum Resources {
         
         enum BaseView {
             static let background = UIColor(hexString: "#1F1D36")
-            static let mainColorApp = UIColor(hexString: "#E9A6A6")
         }
     }
 
@@ -25,15 +24,6 @@ enum Resources {
         enum TabBar {
             static var mainScreen = "Главная"
             static let profileScreen = "Профиль"
-        }
-
-        enum ProfileScreen {
-            static var recentlyFilmsLabel = "Recent"
-            static var recentlyReviewsLabel = "Recent films"
-            static var favoriteFilmsLabel = "Favorite films"
-            static var reviewFilmsForSV = "Reviews"
-            static var willBeFilmsForSV = "Will watch"
-            static var totalFilmsForSV = "Total Films"
         }
     }
 }
