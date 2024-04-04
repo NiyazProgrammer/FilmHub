@@ -18,12 +18,13 @@ class TabBarViewController: UITabBarController {
     }
     
     private func configure() {
-        tabBar.backgroundColor = .white
-        
+        tabBar.backgroundColor = Resources.Colors.BaseView.background
+        tabBar.barTintColor = Resources.Colors.BaseView.background
         tabBar.tintColor = Resources.Colors.TabBar.active
-        tabBar.barTintColor = Resources.Colors.TabBar.inactive
 
-        let profileViewModel = ProfileViewModel()
+        let data = ProfilesMoviewsDataManager()
+
+        let profileViewModel = ProfileViewModel(favoriteFilmsId: data.favoriteFilmsId, recentFilmsId: data.RecentFilmsId)
         let profileController = ProfileViewController(viewModel: profileViewModel)
 
         let mainViewModel = MainViewModel()
